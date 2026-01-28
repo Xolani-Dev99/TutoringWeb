@@ -167,6 +167,30 @@ section h2 {
 
 
 
+.card {
+  padding-right: 6rem;
+}
+
+
+
+.card-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  width: 72px;
+  height: auto;
+
+  z-index: 2;
+  opacity: 0.95;
+  pointer-events: none; /* optional */
+}
+
+
+
+
+
+
 /* ---------- Table ---------- */
 
 table {
