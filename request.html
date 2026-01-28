@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Assistance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header> 
+  <a href="index.html" class="logo-link-small">
+    <img src="Images/TutorsLogo2.png" alt="TutorsLogo2 Logo" class="logo-small">
+  </a>
+  <p>Please review tutors and rates before submitting this form</p>
+</header>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="tutors.html">Support & Tutors</a>
+    <a href="request.html">Request Assistance</a>
+  </div>
+</nav>
+
+<section class="fade-in">
+ <div class="support-blue-wrapper">
+  <div class="container">
+    <div class="container notice">
+      <p>
+        <strong>Important:</strong> Before completing this request form,
+        please ensure that you have reviewed our <a href="tutors.html">available tutors</a>,
+        including their qualifications and experience.
+        You will be required to select a tutor on this form.
+      </p>
+    </div>
+
+    <form id="requestForm" method="post" action="https://script.google.com/macros/s/AKfycbxGrFbDlsXGXkZ1EfSkIObC1iLqnqFi0Y9jpZacmbGfW_H4nrl5-2x28sSdt6kNcSYz/exec">
+
+      <div class="card">
+
+        <label>Parent Name & Surname</label>
+        <input type="text" name="parentName" required>
+
+        <label>Student Name</label>
+        <input type="text" name="studentName" required>
+
+        <label>Parent Contact</label>
+        <input type="text" name="parentContact" required>
+
+        <label>Parent Email</label>
+        <input type="email" name="parentEmail" required>
+
+        <label>Level</label>
+        <select name="level" required>
+          <option>School (Grade 1–12)</option>
+          <option>University (1st Year)</option>
+          <option>University (2nd Year)</option>
+          <option>University (Final Year)</option>
+        </select>
+
+        <label>Subject</label>
+        <select name="subject" required>
+          <option>Mathematics</option>
+          <option>Physical Science</option>
+          <option>Both</option>
+        </select>
+
+        <label>Support Type</label>
+        <select name="supportType" required>
+          <option>High (&lt;50%)</option>
+          <option>Medium (50%–69%)</option>
+          <option>Low (70%–100%)</option>
+        </select>
+
+        <label>Start Date</label>
+        <input type="date" name="startDate" id="startDate" required>
+
+        <label>Duration</label>
+        <select name="duration" required>
+          <option>45 Mins</option>
+          <option>1 Hour</option>
+          <option>2 Hours</option>
+          <option>2+ Hours</option>
+        </select>
+
+        <label>Days & Times</label>
+        <textarea name="schedule" id="schedule" placeholder="e.g., Mon, Wed, Fri – 3:00pm to 5:00pm" required></textarea>
+
+        <label>Tutor</label>
+        <select name="tutor" required>
+          <option>-- Select --</option>
+          <option>Xolani Ndunge</option>
+          <option>Nokutenda Karasa</option>
+          <option>Neo Marumo</option>
+          <option>Kgotso Mokwala</option>
+          <option>Lebohang Tsotetsi</option>
+        </select>
+
+        <label>End Date</label>
+        <input type="date" name="endDate" id="endDate" required>
+
+        <label>Address (Recommended if not online)</label>
+        <textarea name="address" placeholder="e.g., 123 Main Street, City, Postal Code"></textarea>
+
+        <label>Additional Information</label>
+        <textarea name="additionalInfo" placeholder="Any other relevant details"></textarea>
+
+        <button type="submit">Submit Request</button>
+      </div>
+    </form>
+
+  </div>
+ </div>
+</section>
+
+<div class="page-bg"> 
+  <section class="fade-in">
+    <div class="support-blue-wrapper">
+      <div class="container">
+        <p>
+          A quotation for the above request will be sent via email,
+          or alternatively a lesson plan may be provided.
+        </p>
+        <ul>
+          <li>Reminder sent less than 24 hours before each lesson</li>
+          <li>Daily, weekly, or monthly feedback depending on support type</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="Images/TutorsLogo2.png" alt="Brand Symbol">
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="https://www.saexampapers.co.za/" target="_blank" rel="noopener">Mathematics Past Papers</a></li>
+        <li><a href="https://www.saexampapers.co.za/" target="_blank" rel="noopener">Physical Science Past Papers</a></li>
+      </ul>
+    </div>
+
+    <p>© 2026 ThinkSolve Tutors | Academic Tutoring Services</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<a href="https://wa.me/27697391573?text=Hello%20I%20would%20like%20to%20enquire%20about%20tutoring"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat with us on WhatsApp">
+  WhatsApp Us
+</a>
+
+</body>
+</html>
