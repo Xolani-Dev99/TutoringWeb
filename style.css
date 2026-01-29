@@ -316,7 +316,7 @@ footer {
 
 /* PAGE BACKGROUND FROM WHAT WE OFFER */
 .page-bg {
-  background-image: url('images/Image5.jpg'); /* change image anytime */
+  background-image: url('Images/Image5.jpg'); /* change image anytime */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* optional parallax effect */
