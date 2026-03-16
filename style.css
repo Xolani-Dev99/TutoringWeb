@@ -862,3 +862,58 @@ footer {
   font-size: 0.8rem;
   opacity: 0.8;
 }
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  /* Reduce hero height on small devices */
+  .hero-section {
+    height: 60vh; /* shorter for phones */
+  }
+
+  /* Scale hero text */
+  .hero-section .hero-text h1 {
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+  }
+
+  .hero-section .hero-text p {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  /* Reduce hero padding overlay */
+  .hero-section .hero-text {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Adjust badge / Einstein image */
+  .card-albert {
+    width: 180px;  /* smaller on mobile */
+  }
+
+  /* Reduce section paddings globally */
+  section {
+    padding: 1rem;
+  }
+
+  .container, .content-box {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Stack split sections vertically */
+  .split, .split-grid, .image-layout {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Limit tutor images on mobile */
+  .tutor-image {
+    max-width: 90%;
+    margin: 1.5rem auto;
+  }
+
+}
