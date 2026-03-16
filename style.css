@@ -178,7 +178,24 @@ section h2 {
   top: 1rem;
   right: 1rem;
 
+  border-radius: 7px;
+
   width: 72px;
+  height: auto;
+
+  z-index: 2;
+  opacity: 0.95;
+  pointer-events: none; /* optional */
+}
+
+
+.card-albert {
+  top: 1rem;
+  right: 1rem;
+
+  border-radius: 7px;
+
+  width: 270px;
   height: auto;
 
   z-index: 2;
@@ -459,8 +476,18 @@ footer {
 }
 
 .hero-section .hero-text h1 {
-  font-size: 3rem; /* bigger heading for taller hero */
+  font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: #e2e8f0;
+  font-weight: 700;
+}
+
+.hero-section .hero-text h1::before {
+  content: "“";
+}
+
+.hero-section .hero-text h1::after {
+  content: "”";
 }
 
 .hero-section .hero-text p {
@@ -656,6 +683,7 @@ footer {
   color: #fff;
   padding: 2rem;
   border-radius: 12px;
+  position: relative;
 }
 
 .levels {
@@ -783,6 +811,7 @@ footer {
     width: auto;        /* maintain aspect ratio */
     display: block;
     margin: 0 auto;     /* center horizontally */
+    border-radius: 5px;        
 }
 
 
@@ -797,6 +826,7 @@ footer {
   height: auto;
   display: block;
   margin: 0 auto 1rem;
+  border-radius: 5px;
 }
 
 /* Links */
